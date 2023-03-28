@@ -1,0 +1,326 @@
+:root {
+  --main-color: #ffc107;
+  --second-color: #ffce3a;
+  --link-contrast-color: #5f6f92;
+}
+
+/*--------------------------------------------------------------
+# General - Загальні стилі
+--------------------------------------------------------------*/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--second-color);
+  text-decoration: none;
+}
+
+/* h2 {
+  color: var(--main-color);
+} */
+
+img {
+  border-radius: 4px;
+}
+
+/* Колір позаду секцій */
+.section-bg {
+  background-color: #f7f8fa;
+}
+/*--------------------------------------------------------------
+# Header  - Секція з меню
+--------------------------------------------------------------*/
+#header {
+  background: rgba(55, 64, 85, 0.9);
+}
+
+#header.header-transparent {
+  background: transparent;
+}
+
+#header.header-scrolled {
+  background: rgba(55, 64, 85, 0.9);
+}
+.section-title h2::after {
+  background: var(--main-color);
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: var(--main-color);
+}
+
+/*--------------------------------------------------------------
+# About - Секція "Про нас"
+--------------------------------------------------------------*/
+.about h3 {
+  color: #414c64;
+}
+
+.about-galery img {
+ width: 100%;
+}
+
+@media only screen and (max-width : 768px) {
+  .about-img {
+    padding-top: 1rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Counts - Секція "Лічильники"
+--------------------------------------------------------------*/
+
+.counts .counters span {
+  color: #414c64;
+}
+
+/*--------------------------------------------------------------
+# Hero Section - Головная секція
+--------------------------------------------------------------*/
+#hero {
+  background: url("https://raw.githubusercontent.com/Den4ikzxcv/ampli_maraphone/main/assets/img/hero-bg.jpg") top center;
+}
+
+#hero .btn-get-started {
+  border: 2px solid var(--main-color);
+  color: #fff;
+}
+
+#hero .btn-get-started:hover {
+  background: var(--second-color);
+}
+
+/*--------------------------------------------------------------
+# Cta - Секція "Зателефонувати"
+--------------------------------------------------------------*/
+.cta {
+  background: #414c64;
+}
+
+.cta .cta-btn {
+  border: 2px solid var(--main-color);
+  color: #fff;
+}
+
+.cta .cta-btn:hover {
+  background: var(--second-color);;
+}
+
+/*--------------------------------------------------------------
+# Portfolio - Секція портфоліо
+--------------------------------------------------------------*/
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
+  color: white;
+  background: var(--main-color);
+}
+
+.portfolio .portfolio-item .portfolio-info {
+  background: var(--main-color);
+}
+
+.menu-veggie {
+  width: 40px;
+  height: 40px;
+}
+
+.menu-meat {
+  width: 30px; 
+  height: 30px;
+}
+
+.meat-padding {
+  padding-left: 6px;
+}
+
+.hot {
+  color: red;
+}
+
+@media only screen and (min-width : 768px) {
+  .portfolio .portfolio-item .portfolio-info {
+    opacity: 0;    
+    bottom: -50px;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .portfolio .portfolio-item .portfolio-info {
+    opacity: 1;
+    bottom: 0;
+  }
+  
+  .portfolio .portfolio-item img {
+    top: -30px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Testimonials - Секція відгуків
+--------------------------------------------------------------*/
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: var(--second-color);
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  background-color: #fff;
+  border: 1px solid var(--main-color);
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--main-color);
+}
+
+/*--------------------------------------------------------------
+# Team - Секція команди 
+--------------------------------------------------------------*/
+/* .team .member .member-info h4 {
+  color:  var(--main-color);
+} */
+
+/*--------------------------------------------------------------
+# Pricing - Секція цін
+--------------------------------------------------------------*/
+.pricing h4 {
+  color: var(--main-color);
+}
+
+.pricing .featured h3 {
+  color: #fff;
+  background: var(--main-color);
+}
+
+.pricing .featured .btn-buy {
+  background: var(--main-color);
+  color: #fff;
+  border: 2px solid var(--main-color);
+}
+
+.pricing .featured .btn-buy:hover {
+  background: var(--second-color);
+}
+
+.pricing .advanced {
+  background: var(--main-color);
+  color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Frequently Asked Questions - Секція питаннь що часто задаються
+--------------------------------------------------------------*/
+.faq .faq-list .icon-help {
+  color: var(--second-color);
+}
+
+/*--------------------------------------------------------------
+# Contact - Секція "контакти" 
+--------------------------------------------------------------*/
+.contact .info-box {
+  color: #444444; 
+}
+
+.contact .info-box i {
+  color: var(--main-color);
+  border: 2px dotted var(--second-color);
+}
+
+/*--------------------------------------------------------------
+# Form - Форма контакту
+--------------------------------------------------------------*/
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: var(--second-color);
+}
+
+.contact .php-email-form button[type=submit] {
+  background: var(--main-color);
+  color: #fff;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: var(--second-color);
+}
+
+/*--------------------------------------------------------------
+# Footer - Низ сайту з додатковою інформацією
+--------------------------------------------------------------*/
+#footer {
+  color: #414c64;
+  font-size: 14px;
+  background: #f4f5f8;
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  background: #fafafc;
+}
+
+#footer .footer-newsletter form input[type=submit] {
+  background: var(--main-color) !important;
+}
+
+#footer .footer-newsletter form input[type=submit]:hover {
+  background: var(--second-color) !important;
+}
+
+#footer .social-links a {
+  background: #e1e4ec;
+  color: var(--link-contrast-color);
+}
+
+#footer .social-links a:hover {
+  background: var(--second-color);
+}
+
+#footer a {
+  color: var(--link-contrast-color);
+}
+
+#footer .footer-top .footer-links ul i {
+  color: var(--main-color);
+}
+
+#footer .footer-top .footer-links ul a:hover { 
+  color: var(--second-color);
+}
+
+#footer .credits {
+  color: var(--link-contrast-color);
+}
+
+#footer .copyright {
+  color: var(--link-contrast-color);
+}
+/*--------------------------------------------------------------
+# Menu item name - Для тексту що відображується зниу при відкритті зображень
+--------------------------------------------------------------*/
+.glightbox-clean .gslide-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--main-color);
+  margin-bottom: 0px;
+  line-height: 1.4em;
+}
+/*--------------------------------------------------------------
+# Back to top button - Кнопка повернення вгору
+--------------------------------------------------------------*/
+.back-to-top {
+  background: var(--main-color)
+}
+.back-to-top:hover {
+  background: var(--second-color);;
+  color: #fff;
+}
